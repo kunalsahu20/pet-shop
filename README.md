@@ -13,6 +13,8 @@
 ## ⚠️ Important Notes
 - **Responsive Design Status**: This website is currently in development and is not fully responsive across all devices. Best viewed on desktop/laptop screens.
 - **Mobile Navigation**: The mobile navigation is currently being optimized for better user experience.
+- **Development Status**: This project is still under development and serves as an example of a pet shop website. Some images may not be available for viewing. You can easily add your own images by uploading them to the `src/assets/images/` folder. 
+- **Image Handling**: Ensure that the images are named correctly to match the references in the HTML files for proper display.
 
 ## ✨ Features
 

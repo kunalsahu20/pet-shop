@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet - Paws & Hearts</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo.png" alt="Paws & Hearts">
+                <span>Paws & Hearts</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html" class="active">Adopt</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+                <li><button class="donate-btn">Donate</button></li>
+                <li><a href="#" class="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="pets-hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1587764379873-97837921fd44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Pets 1">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Pets 2">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1601758174116-0538fb5c5b28?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Pets 3">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Pets 4">
+            </div>
+        </div>
+        <div class="pets-hero-content" data-aos="fade-up">
+            <h1>Find Your Perfect Companion</h1>
+            <p>Browse our adorable pets waiting for their forever homes</p>
+        </div>
+    </section>
+
+    <section class="pet-search">
+        <div class="container">
+            <div class="search-filters" data-aos="fade-up">
+                <div class="filter-group">
+                    <label>Pet Type</label>
+                    <select>
+                        <option value="all">All Pets</option>
+                        <option value="dogs">Dogs</option>
+                        <option value="cats">Cats</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Age</label>
+                    <select>
+                        <option value="all">Any Age</option>
+                        <option value="young">Young</option>
+                        <option value="adult">Adult</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Size</label>
+                    <select>
+                        <option value="all">Any Size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <button class="search-btn">Search Pets</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-pets">
+        <div class="container">
+            <h2 data-aos="fade-up">Available Pets</h2>
+            <div class="pets-grid" id="petsGrid">
+                <div class="pet-card" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cute Dog">
+                    <div class="pet-info">
+                        <h3>Max</h3>
+                        <p>Friendly Golden Retriever • 2 years</p>
+                        <button class="adopt-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="pet-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cute Cat">
+                    <div class="pet-info">
+                        <h3>Luna</h3>
+                        <p>Playful Siamese Cat • 1 year</p>
+                        <button class="adopt-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="pet-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cute Dog">
+                    <div class="pet-info">
+                        <h3>Rocky</h3>
+                        <p>Energetic Husky • 3 years</p>
+                        <button class="adopt-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="pet-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cute Cat">
+                    <div class="pet-info">
+                        <h3>Milo</h3>
+                        <p>Sweet Tabby Cat • 6 months</p>
+                        <button class="adopt-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adoption-process">
+        <div class="container">
+            <h2 data-aos="fade-up">Adoption Process</h2>
+            <div class="process-steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>1. Find Your Pet</h3>
+                    <p>Browse our available pets and find your perfect match</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>2. Apply</h3>
+                    <p>Fill out our adoption application form</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>3. Meet & Greet</h3>
+                    <p>Visit us to meet your potential new family member</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>4. Welcome Home</h3>
+                    <p>Complete the adoption and welcome your pet home</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Paws & Hearts</h3>
+                <p>Making tails wag and hearts purr since 2023</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html"><i class="fas fa-paw"></i> Home</a></li>
+                    <li><a href="pets.html"><i class="fas fa-heart"></i> Adopt</a></li>
+                    <li><a href="../about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="../contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Pet Adoption</a></li>
+                    <li><a href="#"><i class="fas fa-medkit"></i> Veterinary Care</a></li>
+                    <li><a href="#"><i class="fas fa-hands"></i> Foster Program</a></li>
+                    <li><a href="#"><i class="fas fa-graduation-cap"></i> Pet Training</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates and pet care tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Paws & Hearts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/slideshow.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Hearts - Pet Adoption</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo.png" alt="Paws & Hearts">
+                <span>Paws & Hearts</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pets.html">Adopt</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+                <li><button class="donate-btn">Donate</button></li>
+                <li><a href="#" class="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Pet 1">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Pet 2">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Pet 3">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Pet 4">
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 data-aos="fade-up">Give a Forever Home</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Every pet deserves a loving family. Adopt, don't shop!</p>
+            <button class="cta-button" data-aos="fade-up" data-aos-delay="400">Find Your Perfect Pet</button>
+        </div>
+    </section>
+
+    <section id="adopt" class="pets">
+        <h2 data-aos="fade-up">Pets Looking for Homes</h2>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="dogs">Dogs</button>
+            <button class="filter-btn" data-filter="cats">Cats</button>
+        </div>
+        <div class="pets-grid">
+            <!-- Pet cards will be dynamically added here -->
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 data-aos="fade-up">About Us</h2>
+            <p data-aos="fade-up" data-aos-delay="200">We are dedicated to finding loving homes for abandoned pets. Our mission is to connect wonderful animals with caring families.</p>
+            <div class="stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Pets Adopted</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Happy Families</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Volunteers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-info" data-aos="fade-up" data-aos-delay="400">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Pet Street, Pawsome City</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>---</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>--@example.com--</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Paws & Hearts</h3>
+                <p>Making tails wag and hearts purr since 2023</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#adopt">Adopt</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Paws & Hearts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="./js/slideshow.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

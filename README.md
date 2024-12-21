@@ -33,8 +33,8 @@
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/paws-and-hearts.git
-   cd paws-and-hearts
+   git clone https://github.com/kunalsahu20/pet-shop.git
+   cd pet-shop
    ```
 
 2. Start the local server
@@ -123,10 +123,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Images from [Unsplash](https://unsplash.com)
 - Animations powered by [AOS Library](https://michalsnik.github.io/aos/)
 
-  
-   <p align="center">
-     <img src="https://api.visitorbadge.io/api/visitors?path=yourusername%2Fpaws-and-hearts&label=Visitors&labelColor=%23697689&countColor=%23263759" alt="Visitors"/>
-   </p>
-  
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="rainbow" width="100%">
-</div>
+<p align="center">
+  <img src="https://api.visitorbadge.io/api/visitors?path=kunalsahu20%2Fpet-shop&label=Visitors&labelColor=%23697689&countColor=%23263759" alt="Visitors"/>
+</p>

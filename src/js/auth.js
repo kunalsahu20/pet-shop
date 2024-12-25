@@ -19,7 +19,7 @@ function checkLoginStatus() {
 function handleLogout(e) {
     e.preventDefault();
     localStorage.setItem('isLoggedIn', 'false');
-    window.location.href = 'index.html';
+    window.location.href = 'login.html';
 }
 
 // Initialize when DOM loads
